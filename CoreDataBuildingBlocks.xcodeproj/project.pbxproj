@@ -11,6 +11,8 @@
 		8D1E50A625E2B8D400232CB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E50A525E2B8D400232CB4 /* ContentView.swift */; };
 		8D1E50A825E2B8D500232CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1E50A725E2B8D500232CB4 /* Assets.xcassets */; };
 		8D1E50AB25E2B8D500232CB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1E50AA25E2B8D500232CB4 /* Preview Assets.xcassets */; };
+		8D1E50B525E350B600232CB4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E50B425E350B600232CB4 /* CoreDataManager.swift */; };
+		8D1E50BA25E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E50B825E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		8D1E50A725E2B8D500232CB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1E50AA25E2B8D500232CB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D1E50AC25E2B8D500232CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1E50B425E350B600232CB4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8D1E50B925E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBlocksModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		8D1E50A225E2B8D400232CB4 /* CoreDataBuildingBlocks */ = {
 			isa = PBXGroup;
 			children = (
+				8D1E50B325E350A500232CB4 /* Managers */,
 				8D1E50A325E2B8D400232CB4 /* CoreDataBuildingBlocksApp.swift */,
 				8D1E50A525E2B8D400232CB4 /* ContentView.swift */,
 				8D1E50A725E2B8D500232CB4 /* Assets.xcassets */,
 				8D1E50AC25E2B8D500232CB4 /* Info.plist */,
 				8D1E50A925E2B8D500232CB4 /* Preview Content */,
+				8D1E50B825E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodeld */,
 			);
 			path = CoreDataBuildingBlocks;
 			sourceTree = "<group>";
@@ -67,6 +73,14 @@
 				8D1E50AA25E2B8D500232CB4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D1E50B325E350A500232CB4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8D1E50B425E350B600232CB4 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1E50BA25E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodeld in Sources */,
+				8D1E50B525E350B600232CB4 /* CoreDataManager.swift in Sources */,
 				8D1E50A625E2B8D400232CB4 /* ContentView.swift in Sources */,
 				8D1E50A425E2B8D400232CB4 /* CoreDataBuildingBlocksApp.swift in Sources */,
 			);
@@ -269,7 +285,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDataBuildingBlocks/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = 8V7SM7HTXT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoreDataBuildingBlocks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -291,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDataBuildingBlocks/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = 8V7SM7HTXT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoreDataBuildingBlocks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -328,6 +344,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D1E50B825E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D1E50B925E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodel */,
+			);
+			currentVersion = 8D1E50B925E3519E00232CB4 /* CoreDataBlocksModel.xcdatamodel */;
+			path = CoreDataBlocksModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8D1E509825E2B8D400232CB4 /* Project object */;
 }
